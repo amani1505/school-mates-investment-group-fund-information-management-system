@@ -7,13 +7,13 @@ export class Menu {
       separator: false,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          icon: 'icons/heroicons/outline/chart-pie.svg',
           label: 'Dashboard',
           route: '/dashboard',
           children: [{ label: 'Nfts', route: '/dashboard/nfts' }],
         },
         {
-          icon: 'assets/icons/heroicons/outline/lock-closed.svg',
+          icon: 'icons/heroicons/outline/lock-closed.svg',
           label: 'Auth',
           route: '/auth',
           children: [
@@ -25,7 +25,7 @@ export class Menu {
           ],
         },
         {
-          icon: 'assets/icons/heroicons/outline/exclamation-triangle.svg',
+          icon: 'icons/heroicons/outline/exclamation-triangle.svg',
           label: 'Errors',
           route: '/errors',
           children: [
@@ -34,7 +34,7 @@ export class Menu {
           ],
         },
         {
-          icon: 'assets/icons/heroicons/outline/cube.svg',
+          icon: 'icons/heroicons/outline/cube.svg',
           label: 'Components',
           route: '/components',
           children: [{ label: 'Table', route: '/components/table' }],
@@ -46,17 +46,17 @@ export class Menu {
       separator: true,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/download.svg',
+          icon: 'icons/heroicons/outline/download.svg',
           label: 'Download',
           route: '/download',
         },
         {
-          icon: 'assets/icons/heroicons/outline/gift.svg',
+          icon: 'icons/heroicons/outline/gift.svg',
           label: 'Gift Card',
           route: '/gift',
         },
         {
-          icon: 'assets/icons/heroicons/outline/users.svg',
+          icon: 'icons/heroicons/outline/users.svg',
           label: 'Users',
           route: '/users',
         },
@@ -67,17 +67,17 @@ export class Menu {
       separator: false,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/cog.svg',
+          icon: 'icons/heroicons/outline/cog.svg',
           label: 'Settings',
           route: '/settings',
         },
         {
-          icon: 'assets/icons/heroicons/outline/bell.svg',
+          icon: 'icons/heroicons/outline/bell.svg',
           label: 'Notifications',
           route: '/gift',
         },
         {
-          icon: 'assets/icons/heroicons/outline/folder.svg',
+          icon: 'icons/heroicons/outline/folder.svg',
           label: 'Folders',
           route: '/folders',
           children: [

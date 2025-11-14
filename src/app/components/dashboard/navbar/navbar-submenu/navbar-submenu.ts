@@ -1,5 +1,5 @@
-import { NgTemplateOutlet } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, input, ViewChild } from '@angular/core';
+import { isPlatformBrowser, NgTemplateOutlet } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, inject, input, PLATFORM_ID, ViewChild } from '@angular/core';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 import { SubMenuItem } from '@models/menu.model';
 import { AngularSvgIconModule } from 'angular-svg-icon';
@@ -13,12 +13,13 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 export class NavbarSubmenu implements AfterViewInit {
   public submenu = input<SubMenuItem[]>([]);
   @ViewChild('submenuRef') submenuRef: ElementRef<HTMLDivElement> | undefined;
+  private platformId = inject(PLATFORM_ID);
 
   ngAfterViewInit() {
     /**
      * check if component is out of the screen
      */
-    if (this.submenuRef) {
+    if (isPlatformBrowser(this.platformId) && this.submenuRef) {
       const submenu = this.submenuRef.nativeElement.getBoundingClientRect();
       const bounding = document.body.getBoundingClientRect();
 

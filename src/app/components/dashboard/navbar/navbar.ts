@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MenuService } from '@services/menu.service';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { NavbarMenu } from './navbar-menu/navbar-menu';
 import { ProfileMenu } from './profile-menu/profile-menu';
+import { NavbarMobile } from './navbar-mobile/navbar-mobile';
 
 @Component({
-  selector: 'app-navbar',
-  imports: [AngularSvgIconModule,NavbarMenu,ProfileMenu],
+  selector: 'navbar',
+  imports: [AngularSvgIconModule, ProfileMenu, NavbarMobile],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })

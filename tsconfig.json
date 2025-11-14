@@ -15,7 +15,7 @@
     "paths": {
       "@environment/*": ["./src/environments/*"],
       "@shared/components/*": ["./src/app//shared/components/*"],
-      "@directives": ["./src/app//shared/directives/*"],
+      "@directives/*": ["./src/app//shared/directives/*"],
       "@layouts/*": ["./src/app/Layouts/*"],
       "@components/*": ["./src/app/components/*"],
       "@services/*": ["./src/app/core/services/*"],

@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ResponsiveHelper } from '@shared/componentsresponsive-helper/responsive-helper';
 import { ThemeService } from './core/services/theme.service';
+import { ResponsiveHelper } from '@shared/components/responsive-helper/responsive-helper';
 
 
 @Component({
