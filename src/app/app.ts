@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HlmButtonImports } from '@components/ui/button';
-import { NgIcon } from '@ng-icons/core';
+import { ResponsiveHelper } from '@shared/componentsresponsive-helper/responsive-helper';
+import { ThemeService } from './core/services/theme.service';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HlmButtonImports,NgIcon],
+  imports: [RouterOutlet,ResponsiveHelper],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('school-mates-investment-group-fund-information-management-system');
+  protected readonly title = signal('School Mates Investment Group Fund Information Management System');
+   constructor(public themeService: ThemeService) {}
 }

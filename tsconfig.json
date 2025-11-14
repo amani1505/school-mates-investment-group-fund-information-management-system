@@ -13,165 +13,68 @@
     "target": "ES2022",
     "module": "preserve",
     "paths": {
-      "@components/ui/accordion": [
-        "./src/app/components/ui/accordion/src/index.ts"
-      ],
-      "@components/ui/alert": [
-        "./src/app/components/ui/alert/src/index.ts"
-      ],
-      "@components/ui/alert-dialog": [
-        "./src/app/components/ui/alert-dialog/src/index.ts"
-      ],
-      "@components/ui/aspect-ratio": [
-        "./src/app/components/ui/aspect-ratio/src/index.ts"
-      ],
-      "@components/ui/autocomplete": [
-        "./src/app/components/ui/autocomplete/src/index.ts"
-      ],
-      "@components/ui/avatar": [
-        "./src/app/components/ui/avatar/src/index.ts"
-      ],
-      "@components/ui/badge": [
-        "./src/app/components/ui/badge/src/index.ts"
-      ],
-      "@components/ui/breadcrumb": [
-        "./src/app/components/ui/breadcrumb/src/index.ts"
-      ],
-      "@components/ui/button": [
-        "./src/app/components/ui/button/src/index.ts"
-      ],
-      "@components/ui/button-group": [
-        "./src/app/components/ui/button-group/src/index.ts"
-      ],
-      "@components/ui/calendar": [
-        "./src/app/components/ui/calendar/src/index.ts"
-      ],
-      "@components/ui/card": [
-        "./src/app/components/ui/card/src/index.ts"
-      ],
-      "@components/ui/carousel": [
-        "./src/app/components/ui/carousel/src/index.ts"
-      ],
-      "@components/ui/checkbox": [
-        "./src/app/components/ui/checkbox/src/index.ts"
-      ],
-      "@components/ui/command": [
-        "./src/app/components/ui/command/src/index.ts"
-      ],
-      "@components/ui/date-picker": [
-        "./src/app/components/ui/date-picker/src/index.ts"
-      ],
-      "@components/ui/dialog": [
-        "./src/app/components/ui/dialog/src/index.ts"
-      ],
-      "@components/ui/empty": [
-        "./src/app/components/ui/empty/src/index.ts"
-      ],
-      "@components/ui/field": [
-        "./src/app/components/ui/field/src/index.ts"
-      ],
-      "@components/ui/form-field": [
-        "./src/app/components/ui/form-field/src/index.ts"
-      ],
-      "@components/ui/hover-card": [
-        "./src/app/components/ui/hover-card/src/index.ts"
-      ],
-      "@components/ui/icon": [
-        "./src/app/components/ui/icon/src/index.ts"
-      ],
-      "@components/ui/input": [
-        "./src/app/components/ui/input/src/index.ts"
-      ],
-      "@components/ui/input-group": [
-        "./src/app/components/ui/input-group/src/index.ts"
-      ],
-      "@components/ui/input-otp": [
-        "./src/app/components/ui/input-otp/src/index.ts"
-      ],
-      "@components/ui/item": [
-        "./src/app/components/ui/item/src/index.ts"
-      ],
-      "@components/ui/kbd": [
-        "./src/app/components/ui/kbd/src/index.ts"
-      ],
-      "@components/ui/label": [
-        "./src/app/components/ui/label/src/index.ts"
-      ],
-      "@components/ui/menu": [
-        "./src/app/components/ui/menu/src/index.ts"
-      ],
-      "@components/ui/navigation-menu": [
-        "./src/app/components/ui/navigation-menu/src/index.ts"
-      ],
-      "@components/ui/pagination": [
-        "./src/app/components/ui/pagination/src/index.ts"
-      ],
-      "@components/ui/popover": [
-        "./src/app/components/ui/popover/src/index.ts"
-      ],
-      "@components/ui/progress": [
-        "./src/app/components/ui/progress/src/index.ts"
-      ],
-      "@components/ui/radio-group": [
-        "./src/app/components/ui/radio-group/src/index.ts"
-      ],
-      "@components/ui/resizable": [
-        "./src/app/components/ui/resizable/src/index.ts"
-      ],
-      "@components/ui/scroll-area": [
-        "./src/app/components/ui/scroll-area/src/index.ts"
-      ],
-      "@components/ui/select": [
-        "./src/app/components/ui/select/src/index.ts"
-      ],
-      "@components/ui/separator": [
-        "./src/app/components/ui/separator/src/index.ts"
-      ],
-      "@components/ui/sheet": [
-        "./src/app/components/ui/sheet/src/index.ts"
-      ],
-      "@components/ui/sidebar": [
-        "./src/app/components/ui/sidebar/src/index.ts"
-      ],
-      "@components/ui/skeleton": [
-        "./src/app/components/ui/skeleton/src/index.ts"
-      ],
-      "@components/ui/slider": [
-        "./src/app/components/ui/slider/src/index.ts"
-      ],
-      "@components/ui/sonner": [
-        "./src/app/components/ui/sonner/src/index.ts"
-      ],
-      "@components/ui/spinner": [
-        "./src/app/components/ui/spinner/src/index.ts"
-      ],
-      "@components/ui/switch": [
-        "./src/app/components/ui/switch/src/index.ts"
-      ],
-      "@components/ui/table": [
-        "./src/app/components/ui/table/src/index.ts"
-      ],
-      "@components/ui/tabs": [
-        "./src/app/components/ui/tabs/src/index.ts"
-      ],
-      "@components/ui/textarea": [
-        "./src/app/components/ui/textarea/src/index.ts"
-      ],
-      "@components/ui/toggle": [
-        "./src/app/components/ui/toggle/src/index.ts"
-      ],
-      "@components/ui/toggle-group": [
-        "./src/app/components/ui/toggle-group/src/index.ts"
-      ],
-      "@components/ui/tooltip": [
-        "./src/app/components/ui/tooltip/src/index.ts"
-      ],
-      "@components/ui/typography": [
-        "./src/app/components/ui/typography/src/index.ts"
-      ],
-      "@components/ui/utils": [
-        "./src/app/components/ui/utils/src/index.ts"
-      ]
+      "@environment/*": ["./src/environments/*"],
+      "@shared/components/*": ["./src/app//shared/components/*"],
+      "@directives": ["./src/app//shared/directives/*"],
+      "@layouts/*": ["./src/app/Layouts/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@services/*": ["./src/app/core/services/*"],
+      "@constanst/*": ["./src/app/core/constants/*"],
+      "@models/*": ["./src/app/core/models/*"],
+
+      "@components/ui/accordion": ["./src/app/components/ui/accordion/src/index.ts"],
+      "@components/ui/alert": ["./src/app/components/ui/alert/src/index.ts"],
+      "@components/ui/alert-dialog": ["./src/app/components/ui/alert-dialog/src/index.ts"],
+      "@components/ui/aspect-ratio": ["./src/app/components/ui/aspect-ratio/src/index.ts"],
+      "@components/ui/autocomplete": ["./src/app/components/ui/autocomplete/src/index.ts"],
+      "@components/ui/avatar": ["./src/app/components/ui/avatar/src/index.ts"],
+      "@components/ui/badge": ["./src/app/components/ui/badge/src/index.ts"],
+      "@components/ui/breadcrumb": ["./src/app/components/ui/breadcrumb/src/index.ts"],
+      "@components/ui/button": ["./src/app/components/ui/button/src/index.ts"],
+      "@components/ui/button-group": ["./src/app/components/ui/button-group/src/index.ts"],
+      "@components/ui/calendar": ["./src/app/components/ui/calendar/src/index.ts"],
+      "@components/ui/card": ["./src/app/components/ui/card/src/index.ts"],
+      "@components/ui/carousel": ["./src/app/components/ui/carousel/src/index.ts"],
+      "@components/ui/checkbox": ["./src/app/components/ui/checkbox/src/index.ts"],
+      "@components/ui/command": ["./src/app/components/ui/command/src/index.ts"],
+      "@components/ui/date-picker": ["./src/app/components/ui/date-picker/src/index.ts"],
+      "@components/ui/dialog": ["./src/app/components/ui/dialog/src/index.ts"],
+      "@components/ui/empty": ["./src/app/components/ui/empty/src/index.ts"],
+      "@components/ui/field": ["./src/app/components/ui/field/src/index.ts"],
+      "@components/ui/form-field": ["./src/app/components/ui/form-field/src/index.ts"],
+      "@components/ui/hover-card": ["./src/app/components/ui/hover-card/src/index.ts"],
+      "@components/ui/icon": ["./src/app/components/ui/icon/src/index.ts"],
+      "@components/ui/input": ["./src/app/components/ui/input/src/index.ts"],
+      "@components/ui/input-group": ["./src/app/components/ui/input-group/src/index.ts"],
+      "@components/ui/input-otp": ["./src/app/components/ui/input-otp/src/index.ts"],
+      "@components/ui/item": ["./src/app/components/ui/item/src/index.ts"],
+      "@components/ui/kbd": ["./src/app/components/ui/kbd/src/index.ts"],
+      "@components/ui/label": ["./src/app/components/ui/label/src/index.ts"],
+      "@components/ui/menu": ["./src/app/components/ui/menu/src/index.ts"],
+      "@components/ui/navigation-menu": ["./src/app/components/ui/navigation-menu/src/index.ts"],
+      "@components/ui/pagination": ["./src/app/components/ui/pagination/src/index.ts"],
+      "@components/ui/popover": ["./src/app/components/ui/popover/src/index.ts"],
+      "@components/ui/progress": ["./src/app/components/ui/progress/src/index.ts"],
+      "@components/ui/radio-group": ["./src/app/components/ui/radio-group/src/index.ts"],
+      "@components/ui/resizable": ["./src/app/components/ui/resizable/src/index.ts"],
+      "@components/ui/scroll-area": ["./src/app/components/ui/scroll-area/src/index.ts"],
+      "@components/ui/select": ["./src/app/components/ui/select/src/index.ts"],
+      "@components/ui/separator": ["./src/app/components/ui/separator/src/index.ts"],
+      "@components/ui/sheet": ["./src/app/components/ui/sheet/src/index.ts"],
+      "@components/ui/sidebar": ["./src/app/components/ui/sidebar/src/index.ts"],
+      "@components/ui/skeleton": ["./src/app/components/ui/skeleton/src/index.ts"],
+      "@components/ui/slider": ["./src/app/components/ui/slider/src/index.ts"],
+      "@components/ui/sonner": ["./src/app/components/ui/sonner/src/index.ts"],
+      "@components/ui/spinner": ["./src/app/components/ui/spinner/src/index.ts"],
+      "@components/ui/switch": ["./src/app/components/ui/switch/src/index.ts"],
+      "@components/ui/table": ["./src/app/components/ui/table/src/index.ts"],
+      "@components/ui/tabs": ["./src/app/components/ui/tabs/src/index.ts"],
+      "@components/ui/textarea": ["./src/app/components/ui/textarea/src/index.ts"],
+      "@components/ui/toggle": ["./src/app/components/ui/toggle/src/index.ts"],
+      "@components/ui/toggle-group": ["./src/app/components/ui/toggle-group/src/index.ts"],
+      "@components/ui/tooltip": ["./src/app/components/ui/tooltip/src/index.ts"],
+      "@components/ui/typography": ["./src/app/components/ui/typography/src/index.ts"],
+      "@components/ui/utils": ["./src/app/components/ui/utils/src/index.ts"]
     }
   },
   "angularCompilerOptions": {
